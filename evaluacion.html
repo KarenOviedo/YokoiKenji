@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Evaluación</title>
+    <meta charset="utf-8">
+
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" type="text/css" href="estilos3/bootstrap/css/bootstrap.css">
+    <link href="estilos3/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--HOJAS DE ESTILOS-->
+    <link href="estilos3/css/estilo_css.css" rel="stylesheet">
+    <link href="estilos3/css/cont_estilo_css.css" rel="stylesheet">
+
+    <!--FUENTES-->
+    <link rel="stylesheet" type="text/css" href="fuentes/ailerons/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="fuentes/Roboto/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="fuentes/LemonMilk/stylesheet.css">
+  </head>
+
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <br>
+                <h3>Evaluación</h3>
+                <hr>
+                <h1>Filosofía de Yokoi Kenji</h1>
+                <hr>
+            </div>
+
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+
+                <form action="">
+                    <p style="font-weight: bold; font-size: 22px;">
+                        Hay un gran desconocimiento sobre qué es lo que significa meta, objetivo y propósito. En el momento en que una persona halla su propósito, deja de soñar para pasar a la acción.
+                    </p>
+                    <p><input type="radio" name="Preg1" id="R1_1" onclick="showR1_1();"> Propósito de Vida </p>
+                    <p><input type="radio" name="Preg1" id="R1_2" onclick="showR1_2();"> Deseo de ganar </p>
+                    <p><input type="radio" name="Preg1" id="R1_3" onclick="showR1_3();"> Pereza </p>
+
+                    <br><br>
+
+                    <div id="Result1_1" style="display:none" class="alert-box alert-box--success hideit">
+                        <p style="text-align: center; color: #8EECEC;">
+                            ¡Muy Bien!
+                        </p>
+                    </div>
+                    <div id="Result1_2" style="display:none" class="alert-box alert-box--error hideit">
+                        <p style="text-align: center; color: #8EECEC;">
+                            Nope
+                        </p>
+                    </div>
+                    <div id="Result1_3" style="display:none" class="alert-box alert-box--error hideit">
+                        <p style="text-align: center; color: #8EECEC;">
+                            ¡MAL!
+                        </p>
+                    </div>
+                </form>
+                <hr style="border-color: #8EECEC;">
+
+
+                <form action="">
+                    <p style="font-weight: bold; font-size: 22px;">
+                        El secreto del éxito es trabajar, tener siempre y en todo momento la visión a largo plazo. El éxito simple y veloz es falso. El éxito auténtico es lento, sino más bien no es éxito. La ruina más grave es meditar en el éxito de un día para otro.
+                    </p>
+                    <p><input type="radio" name="Preg2" id="R2_1" onclick="showR2_1();"> Entendimiento </p>
+                    <p><input type="radio" name="Preg2" id="R2_2" onclick="showR2_2();"> Pasión </p>
+                    <p><input type="radio" name="Preg2" id="R2_3" onclick="showR2_3();"> El éxito debe ser lento </p>
+
+                    <br><br>
+
+                    <div id="Result2_1" style="display:none" class="alert-box alert-box--success hideit">
+                        <p style="text-align: center; color: #8EECEC;">
+                            Prueba de nuevo
+                        </p>
+                    </div>
+                    <div id="Result2_2" style="display:none" class="alert-box alert-box--error hideit">
+                        <p style="text-align: center; color: #8EECEC;">
+                            Nope
+                        </p>
+                    </div>
+                    <div id="Result2_3" style="display:none" class="alert-box alert-box--error hideit">
+                        <p style="text-align: center; color: #8EECEC;">
+                            ¡Excelente!
+                        </p>
+                    </div>
+                </form>
+                <hr style="border-color: #8EECEC;">
+
+
+                <form action="">
+                    <p style="font-weight: bold; font-size: 22px;">
+                        En ocasiones, no es suficiente saber mucho, se precisa, además de esto, personas apasionadas en aquello que hacen. No trabajes solo con profesionales, trabaja con apasionados. Un profesional puede llegar tarde, un apasionado no.
+                    </p>
+                    <p><input type="radio" name="Preg3" id="R3_1" onclick="showR3_1();"> Deseo </p>
+                    <p><input type="radio" name="Preg3" id="R3_2" onclick="showR3_2();"> Pasión </p>
+                    <p><input type="radio" name="Preg3" id="R3_3" onclick="showR3_3();"> Seguridad </p>
+
+                    <br><br>
+
+                    <div id="Result3_1" style="display:none" class="alert-box alert-box--success hideit">
+                        <p style="text-align: center; color: #8EECEC;">
+                            Casi... Pero no.
+                        </p>
+                    </div>
+                    <div id="Result3_2" style="display:none" class="alert-box alert-box--error hideit">
+                        <p style="text-align: center; color: #8EECEC;">
+                            ¡Perfecto!
+                        </p>
+                    </div>
+                    <div id="Result3_3" style="display:none" class="alert-box alert-box--error hideit">
+                        <p style="text-align: center; color: #8EECEC;">
+                            No, no, no.
+                        </p>
+                    </div>
+                </form>
+                <hr style="border-color: #8EECEC;">
+
+
+                <form action="">
+                    <p style="font-weight: bold; font-size: 22px;">
+                        La _______, tarde que temprano, vencerá a la inteligencia. En la _______ radica el éxito. La puntualidad forma parte esencial de la _______. 
+                    </p>
+                    <p><input type="radio" name="Preg4" id="R4_1" onclick="showR4_1();"> Ganancia </p>
+                    <p><input type="radio" name="Preg4" id="R4_2" onclick="showR4_2();"> Integridad </p>
+                    <p><input type="radio" name="Preg4" id="R4_3" onclick="showR4_3();"> Disciplina </p>
+
+                    <br><br>
+
+                    <div id="Result4_1" style="display:none" class="alert-box alert-box--success hideit">
+                        <p style="text-align: center; color: #8EECEC;">
+                            Nope.
+                        </p>
+                    </div>
+                    <div id="Result4_2" style="display:none" class="alert-box alert-box--error hideit">
+                        <p style="text-align: center; color: #8EECEC;">
+                            Te has confudido mucho.
+                        </p>
+                    </div>
+                    <div id="Result4_3" style="display:none" class="alert-box alert-box--error hideit">
+                        <p style="text-align: center; color: #8EECEC;">
+                            ¡Exelente!
+                        </p>
+                    </div>
+                </form>
+                <hr style="border-color: #8EECEC;">
+
+
+                <form action="">
+                    <p style="font-weight: bold; font-size: 22px;">
+                        Una fácil: ¿De qué nacionalidad es Yokoi Kenji?
+                    </p>
+                    <p><input type="radio" name="Preg5" id="R5_1" onclick="showR5_1();"> Chino-Mexicano </p>
+                    <p><input type="radio" name="Preg5" id="R5_2" onclick="showR5_2();"> Sólo Japonés </p>
+                    <p><input type="radio" name="Preg5" id="R5_3" onclick="showR5_3();"> Colombiano-Japonés </p>
+
+                    <br><br>
+
+                    <div id="Result5_1" style="display:none" class="alert-box alert-box--success hideit">
+                        <p style="text-align: center; color: #8EECEC;">
+                            Para nada
+                        </p>
+                    </div>
+                    <div id="Result5_2" style="display:none" class="alert-box alert-box--error hideit">
+                        <p style="text-align: center; color: #8EECEC;">
+                            Casi, pero nope.
+                        </p>
+                    </div>
+                    <div id="Result5_3" style="display:none" class="alert-box alert-box--error hideit">
+                        <p style="text-align: center; color: #8EECEC;">
+                            Muy bien. Fácil, ¿verdad?.
+                        </p>
+                    </div>
+                </form>
+                <hr style="border-color: #8EECEC;">
+
+
+                <form action="">
+                    <p style="font-weight: bold; font-size: 22px;">
+                        Si no es ______, no halla su propósito. Creemos, equivocadamente, que para ser ______ debemos tener cosas. Asimismo pensamos, en ocasiones, que la dicha es un sitio. La dicha es una resolución tomada, bajo cualquier circunstancia.
+                    </p>
+                    <p><input type="radio" name="Preg6" id="R6_1" onclick="showR6_1();"> Feliz </p>
+                    <p><input type="radio" name="Preg6" id="R6_2" onclick="showR6_2();"> Calmado </p>
+                    <p><input type="radio" name="Preg6" id="R6_3" onclick="showR6_3();"> Exagerado </p>
+
+                    <br><br>
+
+                    <div id="Result6_1" style="display:none" class="alert-box alert-box--success hideit">
+                        <p style="text-align: center; color: #8EECEC;">
+                            Perfecto!!
+                        </p>
+                    </div>
+                    <div id="Result6_2" style="display:none" class="alert-box alert-box--error hideit">
+                        <p style="text-align: center; color: #8EECEC;">
+                            No.
+                        </p>
+                    </div>
+                    <div id="Result6_3" style="display:none" class="alert-box alert-box--error hideit">
+                        <p style="text-align: center; color: #8EECEC;">
+                            DEfinitivamente no!!!
+                        </p>
+                    </div>
+                </form>
+                <hr style="border-color: #8EECEC;">
+                <br><br><br><br>
+
+
+
+            </div>
+            <div class="col-lg-1"></div>
+                
+            <div class="col-lg-12">    
+                <br>___________________________________________________________
+                <a href="index.html">Volver al menú</a>___________________________________________________________
+                <br><br><br><br><br><br>
+            </div>            
+        </div>
+
+    </div>
+
+
+     <!-- Java Script
+    ================================================== -->
+    <script type="text/javascript">
+    function showR1_1(){
+      document.getElementById('Result1_1').style.display ='block';
+      document.getElementById('Result1_2').style.display ='none';
+      document.getElementById('Result1_3').style.display ='none';
+    }
+    function showR1_2(){
+      document.getElementById('Result1_1').style.display ='none';
+      document.getElementById('Result1_2').style.display ='block';
+      document.getElementById('Result1_3').style.display ='none';
+    }
+    function showR1_3(){
+      document.getElementById('Result1_1').style.display ='none';
+      document.getElementById('Result1_2').style.display ='none';
+      document.getElementById('Result1_3').style.display ='block';
+    }
+
+
+    function showR2_1(){
+      document.getElementById('Result2_1').style.display ='block';
+      document.getElementById('Result2_2').style.display ='none';
+      document.getElementById('Resul21_3').style.display ='none';
+    }
+    function showR2_2(){
+      document.getElementById('Result2_1').style.display ='none';
+      document.getElementById('Result2_2').style.display ='block';
+      document.getElementById('Result2_3').style.display ='none';
+    }
+    function showR2_3(){
+      document.getElementById('Result2_1').style.display ='none';
+      document.getElementById('Result2_2').style.display ='none';
+      document.getElementById('Result2_3').style.display ='block';
+    }
+
+
+    function showR3_1(){
+      document.getElementById('Result3_1').style.display ='block';
+      document.getElementById('Result3_2').style.display ='none';
+      document.getElementById('Result3_3').style.display ='none';
+    }
+    function showR3_2(){
+      document.getElementById('Result3_1').style.display ='none';
+      document.getElementById('Result3_2').style.display ='block';
+      document.getElementById('Result3_3').style.display ='none';
+    }
+    function showR3_3(){
+      document.getElementById('Result3_1').style.display ='none';
+      document.getElementById('Result3_2').style.display ='none';
+      document.getElementById('Result3_3').style.display ='block';
+    }
+
+
+    function showR4_1(){
+      document.getElementById('Result4_1').style.display ='block';
+      document.getElementById('Result4_2').style.display ='none';
+      document.getElementById('Result4_3').style.display ='none';
+    }
+    function showR4_2(){
+      document.getElementById('Result4_1').style.display ='none';
+      document.getElementById('Result4_2').style.display ='block';
+      document.getElementById('Result4_3').style.display ='none';
+    }
+    function showR4_3(){
+      document.getElementById('Result4_1').style.display ='none';
+      document.getElementById('Result4_2').style.display ='none';
+      document.getElementById('Result4_3').style.display ='block';
+    }
+
+
+    function showR5_1(){
+        document.getElementById('Result5_1').style.display ='block';
+        document.getElementById('Result5_2').style.display ='none';
+        document.getElementById('Result5_3').style.display ='none';
+      }
+      function showR5_2(){
+        document.getElementById('Result5_1').style.display ='none';
+        document.getElementById('Result5_2').style.display ='block';
+        document.getElementById('Result5_3').style.display ='none';
+      }
+      function showR5_3(){
+        document.getElementById('Result5_1').style.display ='none';
+        document.getElementById('Result5_2').style.display ='none';
+        document.getElementById('Result5_3').style.display ='block';
+      }
+
+
+      function showR6_1(){
+        document.getElementById('Result6_1').style.display ='block';
+        document.getElementById('Result6_2').style.display ='none';
+        document.getElementById('Result6_3').style.display ='none';
+      }
+      function showR6_2(){
+        document.getElementById('Result6_1').style.display ='none';
+        document.getElementById('Result6_2').style.display ='block';
+        document.getElementById('Result6_3').style.display ='none';
+      }
+      function showR6_3(){
+        document.getElementById('Result6_1').style.display ='none';
+        document.getElementById('Result6_2').style.display ='none';
+        document.getElementById('Result6_3').style.display ='block';
+      }
+    </script>
+
+</body>
+
+</html>
